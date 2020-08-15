@@ -1,9 +1,9 @@
 @isTest
 private class SwagGenerateBarcodeApiTest {
     /**
-     * Validates and generate a EAN-13 barcode as a PNG file, a type of 1D barcode
+     * Generate a EAN-13 code barcode as PNG file
      *
-     * 
+     * Validates and generate a EAN-13 barcode as a PNG file, a type of 1D barcode
      */
     @isTest
     private static void generateBarcodeEAN13Test() {
@@ -28,15 +28,15 @@ private class SwagGenerateBarcodeApiTest {
 
         res.setHeader('Content-Type', 'application/json');
         res.setBody('"VGhlIHF1aWNrIGJyb3duIGZveCBqdW1wZWQgb3ZlciB0aGUgbGF6eSBkb2cu"');
-        expectedResponse = EncodingUtil.base64Decode(VGhlIHF1aWNrIGJyb3duIGZveCBqdW1wZWQgb3ZlciB0aGUgbGF6eSBkb2cu);
+        expectedResponse = EncodingUtil.base64Decode('VGhlIHF1aWNrIGJyb3duIGZveCBqdW1wZWQgb3ZlciB0aGUgbGF6eSBkb2cu');
         response = (Blob) api.generateBarcodeEAN13(params);
         System.assertEquals(expectedResponse, response);
     }
 
     /**
-     * Validates and generate a EAN-8 barcode as a PNG file, a type of 1D barcode
+     * Generate a EAN-8 code barcode as PNG file
      *
-     * 
+     * Validates and generate a EAN-8 barcode as a PNG file, a type of 1D barcode
      */
     @isTest
     private static void generateBarcodeEAN8Test() {
@@ -61,15 +61,15 @@ private class SwagGenerateBarcodeApiTest {
 
         res.setHeader('Content-Type', 'application/json');
         res.setBody('"VGhlIHF1aWNrIGJyb3duIGZveCBqdW1wZWQgb3ZlciB0aGUgbGF6eSBkb2cu"');
-        expectedResponse = EncodingUtil.base64Decode(VGhlIHF1aWNrIGJyb3duIGZveCBqdW1wZWQgb3ZlciB0aGUgbGF6eSBkb2cu);
+        expectedResponse = EncodingUtil.base64Decode('VGhlIHF1aWNrIGJyb3duIGZveCBqdW1wZWQgb3ZlciB0aGUgbGF6eSBkb2cu');
         response = (Blob) api.generateBarcodeEAN8(params);
         System.assertEquals(expectedResponse, response);
     }
 
     /**
-     * Generate a QR code barcode as a PNG file, a type of 2D barcode which can encode free-form text information
+     * Generate a QR code barcode as PNG file
      *
-     * 
+     * Generate a QR code barcode as a PNG file, a type of 2D barcode which can encode free-form text information
      */
     @isTest
     private static void generateBarcodeQRCodeTest() {
@@ -94,15 +94,15 @@ private class SwagGenerateBarcodeApiTest {
 
         res.setHeader('Content-Type', 'application/json');
         res.setBody('"VGhlIHF1aWNrIGJyb3duIGZveCBqdW1wZWQgb3ZlciB0aGUgbGF6eSBkb2cu"');
-        expectedResponse = EncodingUtil.base64Decode(VGhlIHF1aWNrIGJyb3duIGZveCBqdW1wZWQgb3ZlciB0aGUgbGF6eSBkb2cu);
+        expectedResponse = EncodingUtil.base64Decode('VGhlIHF1aWNrIGJyb3duIGZveCBqdW1wZWQgb3ZlciB0aGUgbGF6eSBkb2cu');
         response = (Blob) api.generateBarcodeQRCode(params);
         System.assertEquals(expectedResponse, response);
     }
 
     /**
-     * Validate and generate a UPC-A barcode as a PNG file, a type of 1D barcode
+     * Generate a UPC-A code barcode as PNG file
      *
-     * 
+     * Validate and generate a UPC-A barcode as a PNG file, a type of 1D barcode
      */
     @isTest
     private static void generateBarcodeUPCATest() {
@@ -127,15 +127,15 @@ private class SwagGenerateBarcodeApiTest {
 
         res.setHeader('Content-Type', 'application/json');
         res.setBody('"VGhlIHF1aWNrIGJyb3duIGZveCBqdW1wZWQgb3ZlciB0aGUgbGF6eSBkb2cu"');
-        expectedResponse = EncodingUtil.base64Decode(VGhlIHF1aWNrIGJyb3duIGZveCBqdW1wZWQgb3ZlciB0aGUgbGF6eSBkb2cu);
+        expectedResponse = EncodingUtil.base64Decode('VGhlIHF1aWNrIGJyb3duIGZveCBqdW1wZWQgb3ZlciB0aGUgbGF6eSBkb2cu');
         response = (Blob) api.generateBarcodeUPCA(params);
         System.assertEquals(expectedResponse, response);
     }
 
     /**
-     * Validates and generate a UPC-E barcode as a PNG file, a type of 1D barcode
+     * Generate a UPC-E code barcode as PNG file
      *
-     * 
+     * Validates and generate a UPC-E barcode as a PNG file, a type of 1D barcode
      */
     @isTest
     private static void generateBarcodeUPCETest() {
@@ -160,7 +160,7 @@ private class SwagGenerateBarcodeApiTest {
 
         res.setHeader('Content-Type', 'application/json');
         res.setBody('"VGhlIHF1aWNrIGJyb3duIGZveCBqdW1wZWQgb3ZlciB0aGUgbGF6eSBkb2cu"');
-        expectedResponse = EncodingUtil.base64Decode(VGhlIHF1aWNrIGJyb3duIGZveCBqdW1wZWQgb3ZlciB0aGUgbGF6eSBkb2cu);
+        expectedResponse = EncodingUtil.base64Decode('VGhlIHF1aWNrIGJyb3duIGZveCBqdW1wZWQgb3ZlciB0aGUgbGF6eSBkb2cu');
         response = (Blob) api.generateBarcodeUPCE(params);
         System.assertEquals(expectedResponse, response);
     }

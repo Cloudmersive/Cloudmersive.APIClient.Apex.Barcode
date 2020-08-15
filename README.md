@@ -65,13 +65,13 @@ All URIs are relative to *https://api.cloudmersive.com*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*SwagBarcodeLookupApi* | [**barcodeLookupEanLookup**](docs/SwagBarcodeLookupApi.md#barcodeLookupEanLookup) | **POST** /barcode/lookup/ean | Lookup a barcode value and return product data
-*SwagBarcodeScanApi* | [**barcodeScanImage**](docs/SwagBarcodeScanApi.md#barcodeScanImage) | **POST** /barcode/scan/image | Scan an image for a barcode and turn the result.  Supported barcode types include AZTEC, CODABAR, CODE_39, CODE_93, CODE_128, DATA_MATRIX, EAN_8, EAN_13, ITF, MAXICODE, PDF_417, QR_CODE, RSS_14, RSS_EXPANDED, UPC_A, UPC_E, All_1D, UPC_EAN_EXTENSION, MSI, PLESSEY, IMB
-*SwagGenerateBarcodeApi* | [**generateBarcodeEAN13**](docs/SwagGenerateBarcodeApi.md#generateBarcodeEAN13) | **POST** /barcode/generate/ean-13 | Validates and generate a EAN-13 barcode as a PNG file, a type of 1D barcode
-*SwagGenerateBarcodeApi* | [**generateBarcodeEAN8**](docs/SwagGenerateBarcodeApi.md#generateBarcodeEAN8) | **POST** /barcode/generate/ean-8 | Validates and generate a EAN-8 barcode as a PNG file, a type of 1D barcode
-*SwagGenerateBarcodeApi* | [**generateBarcodeQRCode**](docs/SwagGenerateBarcodeApi.md#generateBarcodeQRCode) | **POST** /barcode/generate/qrcode | Generate a QR code barcode as a PNG file, a type of 2D barcode which can encode free-form text information
-*SwagGenerateBarcodeApi* | [**generateBarcodeUPCA**](docs/SwagGenerateBarcodeApi.md#generateBarcodeUPCA) | **POST** /barcode/generate/upc-a | Validate and generate a UPC-A barcode as a PNG file, a type of 1D barcode
-*SwagGenerateBarcodeApi* | [**generateBarcodeUPCE**](docs/SwagGenerateBarcodeApi.md#generateBarcodeUPCE) | **POST** /barcode/generate/upc-e | Validates and generate a UPC-E barcode as a PNG file, a type of 1D barcode
+*SwagBarcodeLookupApi* | [**barcodeLookupEanLookup**](docs/SwagBarcodeLookupApi.md#barcodeLookupEanLookup) | **POST** /barcode/lookup/ean | Lookup EAN barcode value, return product data
+*SwagBarcodeScanApi* | [**barcodeScanImage**](docs/SwagBarcodeScanApi.md#barcodeScanImage) | **POST** /barcode/scan/image | Scan and recognize an image of a barcode
+*SwagGenerateBarcodeApi* | [**generateBarcodeEAN13**](docs/SwagGenerateBarcodeApi.md#generateBarcodeEAN13) | **POST** /barcode/generate/ean-13 | Generate a EAN-13 code barcode as PNG file
+*SwagGenerateBarcodeApi* | [**generateBarcodeEAN8**](docs/SwagGenerateBarcodeApi.md#generateBarcodeEAN8) | **POST** /barcode/generate/ean-8 | Generate a EAN-8 code barcode as PNG file
+*SwagGenerateBarcodeApi* | [**generateBarcodeQRCode**](docs/SwagGenerateBarcodeApi.md#generateBarcodeQRCode) | **POST** /barcode/generate/qrcode | Generate a QR code barcode as PNG file
+*SwagGenerateBarcodeApi* | [**generateBarcodeUPCA**](docs/SwagGenerateBarcodeApi.md#generateBarcodeUPCA) | **POST** /barcode/generate/upc-a | Generate a UPC-A code barcode as PNG file
+*SwagGenerateBarcodeApi* | [**generateBarcodeUPCE**](docs/SwagGenerateBarcodeApi.md#generateBarcodeUPCE) | **POST** /barcode/generate/upc-e | Generate a UPC-E code barcode as PNG file
 
 
 ## Documentation for Models

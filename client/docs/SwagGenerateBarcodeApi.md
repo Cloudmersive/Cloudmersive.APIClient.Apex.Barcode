@@ -4,16 +4,18 @@ All URIs are relative to *https://api.cloudmersive.com*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
-[**generateBarcodeEAN13**](SwagGenerateBarcodeApi.md#generateBarcodeEAN13) | **POST** /barcode/generate/ean-13 | Validates and generate a EAN-13 barcode as a PNG file, a type of 1D barcode
-[**generateBarcodeEAN8**](SwagGenerateBarcodeApi.md#generateBarcodeEAN8) | **POST** /barcode/generate/ean-8 | Validates and generate a EAN-8 barcode as a PNG file, a type of 1D barcode
-[**generateBarcodeQRCode**](SwagGenerateBarcodeApi.md#generateBarcodeQRCode) | **POST** /barcode/generate/qrcode | Generate a QR code barcode as a PNG file, a type of 2D barcode which can encode free-form text information
-[**generateBarcodeUPCA**](SwagGenerateBarcodeApi.md#generateBarcodeUPCA) | **POST** /barcode/generate/upc-a | Validate and generate a UPC-A barcode as a PNG file, a type of 1D barcode
-[**generateBarcodeUPCE**](SwagGenerateBarcodeApi.md#generateBarcodeUPCE) | **POST** /barcode/generate/upc-e | Validates and generate a UPC-E barcode as a PNG file, a type of 1D barcode
+[**generateBarcodeEAN13**](SwagGenerateBarcodeApi.md#generateBarcodeEAN13) | **POST** /barcode/generate/ean-13 | Generate a EAN-13 code barcode as PNG file
+[**generateBarcodeEAN8**](SwagGenerateBarcodeApi.md#generateBarcodeEAN8) | **POST** /barcode/generate/ean-8 | Generate a EAN-8 code barcode as PNG file
+[**generateBarcodeQRCode**](SwagGenerateBarcodeApi.md#generateBarcodeQRCode) | **POST** /barcode/generate/qrcode | Generate a QR code barcode as PNG file
+[**generateBarcodeUPCA**](SwagGenerateBarcodeApi.md#generateBarcodeUPCA) | **POST** /barcode/generate/upc-a | Generate a UPC-A code barcode as PNG file
+[**generateBarcodeUPCE**](SwagGenerateBarcodeApi.md#generateBarcodeUPCE) | **POST** /barcode/generate/upc-e | Generate a UPC-E code barcode as PNG file
 
 
 <a name="generateBarcodeEAN13"></a>
 # **generateBarcodeEAN13**
 > Blob generateBarcodeEAN13(value)
+
+Generate a EAN-13 code barcode as PNG file
 
 Validates and generate a EAN-13 barcode as a PNG file, a type of 1D barcode
 
@@ -62,6 +64,8 @@ Name | Type | Description  | Notes
 # **generateBarcodeEAN8**
 > Blob generateBarcodeEAN8(value)
 
+Generate a EAN-8 code barcode as PNG file
+
 Validates and generate a EAN-8 barcode as a PNG file, a type of 1D barcode
 
 ### Example
@@ -108,6 +112,8 @@ Name | Type | Description  | Notes
 <a name="generateBarcodeQRCode"></a>
 # **generateBarcodeQRCode**
 > Blob generateBarcodeQRCode(value)
+
+Generate a QR code barcode as PNG file
 
 Generate a QR code barcode as a PNG file, a type of 2D barcode which can encode free-form text information
 
@@ -156,6 +162,8 @@ Name | Type | Description  | Notes
 # **generateBarcodeUPCA**
 > Blob generateBarcodeUPCA(value)
 
+Generate a UPC-A code barcode as PNG file
+
 Validate and generate a UPC-A barcode as a PNG file, a type of 1D barcode
 
 ### Example
@@ -202,6 +210,8 @@ Name | Type | Description  | Notes
 <a name="generateBarcodeUPCE"></a>
 # **generateBarcodeUPCE**
 > Blob generateBarcodeUPCE(value)
+
+Generate a UPC-E code barcode as PNG file
 
 Validates and generate a UPC-E barcode as a PNG file, a type of 1D barcode
 

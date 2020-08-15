@@ -26,8 +26,8 @@ public class SwagGenerateBarcodeApi {
     }
 
     /**
+     * Generate a EAN-13 code barcode as PNG file
      * Validates and generate a EAN-13 barcode as a PNG file, a type of 1D barcode
-     * 
      * @param value Barcode value to generate from (required)
      * @return Blob
      * @throws Swagger.ApiException if fails to make API call
@@ -50,8 +50,8 @@ public class SwagGenerateBarcodeApi {
         );
     }
     /**
+     * Generate a EAN-8 code barcode as PNG file
      * Validates and generate a EAN-8 barcode as a PNG file, a type of 1D barcode
-     * 
      * @param value Barcode value to generate from (required)
      * @return Blob
      * @throws Swagger.ApiException if fails to make API call
@@ -74,8 +74,8 @@ public class SwagGenerateBarcodeApi {
         );
     }
     /**
+     * Generate a QR code barcode as PNG file
      * Generate a QR code barcode as a PNG file, a type of 2D barcode which can encode free-form text information
-     * 
      * @param value QR code text to convert into the QR code barcode (required)
      * @return Blob
      * @throws Swagger.ApiException if fails to make API call
@@ -98,8 +98,8 @@ public class SwagGenerateBarcodeApi {
         );
     }
     /**
+     * Generate a UPC-A code barcode as PNG file
      * Validate and generate a UPC-A barcode as a PNG file, a type of 1D barcode
-     * 
      * @param value UPC-A barcode value to generate from (required)
      * @return Blob
      * @throws Swagger.ApiException if fails to make API call
@@ -122,8 +122,8 @@ public class SwagGenerateBarcodeApi {
         );
     }
     /**
+     * Generate a UPC-E code barcode as PNG file
      * Validates and generate a UPC-E barcode as a PNG file, a type of 1D barcode
-     * 
      * @param value UPC-E barcode value to generate from (required)
      * @return Blob
      * @throws Swagger.ApiException if fails to make API call
