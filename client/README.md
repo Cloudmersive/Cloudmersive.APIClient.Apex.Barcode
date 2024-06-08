@@ -67,6 +67,7 @@ Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
 *SwagBarcodeLookupApi* | [**barcodeLookupEanLookup**](docs/SwagBarcodeLookupApi.md#barcodeLookupEanLookup) | **POST** /barcode/lookup/ean | Lookup EAN barcode value, return product data
 *SwagBarcodeScanApi* | [**barcodeScanImage**](docs/SwagBarcodeScanApi.md#barcodeScanImage) | **POST** /barcode/scan/image | Scan and recognize an image of a barcode
+*SwagBarcodeScanApi* | [**barcodeScanImageAdvancedQR**](docs/SwagBarcodeScanApi.md#barcodeScanImageAdvancedQR) | **POST** /barcode/scan/image/advanced/qr | Advanced AI scan and recognition of an image of one or more QR barcodes
 *SwagGenerateBarcodeApi* | [**generateBarcodeEAN13**](docs/SwagGenerateBarcodeApi.md#generateBarcodeEAN13) | **POST** /barcode/generate/ean-13 | Generate a EAN-13 code barcode as PNG file
 *SwagGenerateBarcodeApi* | [**generateBarcodeEAN8**](docs/SwagGenerateBarcodeApi.md#generateBarcodeEAN8) | **POST** /barcode/generate/ean-8 | Generate a EAN-8 code barcode as PNG file
 *SwagGenerateBarcodeApi* | [**generateBarcodeQRCode**](docs/SwagGenerateBarcodeApi.md#generateBarcodeQRCode) | **POST** /barcode/generate/qrcode | Generate a QR code barcode as PNG file
@@ -77,6 +78,8 @@ Class | Method | HTTP request | Description
 ## Documentation for Models
 
  - [SwagBarcodeLookupResponse](docs/SwagBarcodeLookupResponse.md)
+ - [SwagBarcodeQRResultItem](docs/SwagBarcodeQRResultItem.md)
+ - [SwagBarcodeScanQRAdvancedResult](docs/SwagBarcodeScanQRAdvancedResult.md)
  - [SwagBarcodeScanResult](docs/SwagBarcodeScanResult.md)
  - [SwagProductMatch](docs/SwagProductMatch.md)
 

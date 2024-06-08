@@ -51,4 +51,33 @@ public class SwagBarcodeScanApi {
             SwagBarcodeScanResult.class
         );
     }
+    /**
+     * Advanced AI scan and recognition of an image of one or more QR barcodes
+     * Scan an image or photo of a QR barcode and return the result.  Uses AI deep learning to read blurry or low resultion QR barcodes.  Supports PNG and JPEG input file formats.
+     * @param imageFile Image file to perform the operation on.  Common file formats such as PNG, JPEG are supported. (required)
+     * @param preprocessing Optional, preprocessing mode, default is \&#39;Auto\&#39;.  Possible values are None (no preprocessing of the image), and Auto (automatic image enhancement of the image - including automatic unrotation of the image - before OCR is applied; this is recommended).  Set this to \&#39;None\&#39; if you do not want to use automatic image unrotation and enhancement. (optional)
+     * @return SwagBarcodeScanQRAdvancedResult
+     * @throws Swagger.ApiException if fails to make API call
+     */
+    public SwagBarcodeScanQRAdvancedResult barcodeScanImageAdvancedQR(Map<String, Object> params) {
+        client.assertNotNull(params.get('imageFile'), 'imageFile');
+        List<Swagger.Param> query = new List<Swagger.Param>();
+        List<Swagger.Param> form = new List<Swagger.Param>();
+
+        // cast form params to verify their expected type
+        form.addAll(client.makeParam('imageFile', (Blob) params.get('imageFile')));
+
+        return (SwagBarcodeScanQRAdvancedResult) client.invoke(
+            'POST', '/barcode/scan/image/advanced/qr', '',
+            query, form,
+            new Map<String, Object>(),
+            new Map<String, Object>{
+                'preprocessing' => (String) params.get('preprocessing')
+            },
+            new List<String>{ 'application/json' },
+            new List<String>{ 'application/x-www-form-urlencoded' },
+            new List<String> { 'Apikey' },
+            SwagBarcodeScanQRAdvancedResult.class
+        );
+    }
 }
